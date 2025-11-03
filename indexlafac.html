@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>استبيان حول تأثير التكنولوجيا على المحاسبة</title>
+
+  <!-- خطوط -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS خارجي -->
+  <link rel="stylesheet" href="stylelafac.css">
+</head>
+<body>
+  <!-- شريط التقدم -->
+  <div class="top-ui">
+    <div class="progress-track" aria-hidden="true">
+      <div class="progress-glow"></div>
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+    <div class="progress-badge" id="progressBadge">0 / 10</div>
+  </div>
+
+  <main class="survey-frame" role="main" aria-labelledby="surveyTitle">
+    <h1 id="surveyTitle">📊 استبيان حول تأثير التكنولوجيا الحديثة على مستقبل المحاسبة</h1>
+
+    <form id="surveyForm" autocomplete="off" novalidate>
+      <div class="questions-wrap">
+        <!-- السؤال 1 -->
+        <div class="question" data-index="0">
+          <h2>1️⃣ السن:</h2>
+          <label><input type="radio" name="age" value="أقل من 20"> أقل من 20 سنة</label>
+          <label><input type="radio" name="age" value="من 20 إلى 25"> من 20 إلى 25 سنة</label>
+          <label><input type="radio" name="age" value="أكثر من 25"> أكثر من 25 سنة</label>
+        </div>
+        <!-- السؤال 2 -->
+        <div class="question" data-index="1">
+          <h2>2️⃣ المستوى الدراسي:</h2>
+          <label><input type="radio" name="level" value="ليسانس"> ليسانس (سنة أولى – ثالثة)</label>
+          <label><input type="radio" name="level" value="ماستر"> ماستر</label>
+          <label><input type="radio" name="level" value="دكتوراه"> دكتوراه</label>
+        </div>
+        <!-- السؤال 3 -->
+        <div class="question" data-index="2">
+          <h2>3️⃣ هل تلقيت تدريبًا أو تكوينًا في مجال المحاسبة أو الاقتصاد؟</h2>
+          <label><input type="radio" name="training" value="داخل الجامعة"> نعم، داخل الجامعة</label>
+          <label><input type="radio" name="training" value="خارج الجامعة"> نعم، خارج الجامعة (تربص أو دورة)</label>
+          <label><input type="radio" name="training" value="لا"> لا، لم أتلقَّ أي تدريب</label>
+        </div>
+        <!-- السؤال 4 -->
+        <div class="question" data-index="3">
+          <h2>4️⃣ ما مدى استخدامك للتكنولوجيا في دراستك أو عملك المحاسبي؟</h2>
+          <label><input type="radio" name="tech_use" value="يوميًا"> بشكل يومي</label>
+          <label><input type="radio" name="tech_use" value="أحيانًا"> أحيانًا</label>
+          <label><input type="radio" name="tech_use" value="نادرًا"> نادرًا</label>
+          <label><input type="radio" name="tech_use" value="لا أستخدمها"> لا أستخدمها</label>
+        </div>
+        <!-- السؤال 5 -->
+        <div class="question" data-index="4">
+          <h2>5️⃣ هل تعتقد أن التكنولوجيا جعلت المحاسبة أكثر دقة وسرعة؟</h2>
+          <label><input type="radio" name="accuracy" value="نعم جدًا"> نعم، بشكل واضح جدًا</label>
+          <label><input type="radio" name="accuracy" value="نعم ولكن"> نعم، لكن لا تزال هناك أخطاء</label>
+          <label><input type="radio" name="accuracy" value="لا"> لا، التكنولوجيا عقدت الأمور</label>
+          <label><input type="radio" name="accuracy" value="لا أدري"> لا أدري</label>
+        </div>
+        <!-- السؤال 6 -->
+        <div class="question" data-index="5">
+          <h2>6️⃣ هل ترى أن البرامج المحاسبية الحديثة قلّلت من أهمية المحاسب البشري؟</h2>
+          <label><input type="radio" name="role" value="نعم"> نعم، بدرجة كبيرة</label>
+          <label><input type="radio" name="role" value="جزئيًا"> جزئيًا، لكن يبقى دور المحاسب مهمًا</label>
+          <label><input type="radio" name="role" value="لا"> لا، التكنولوجيا فقط تسهّل عمله</label>
+          <label><input type="radio" name="role" value="لا أعرف"> لا أعرف</label>
+        </div>
+        <!-- السؤال 7 -->
+        <div class="question" data-index="6">
+          <h2>7️⃣ أي من هذه الأدوات تؤثر أكثر في عمل المحاسب اليوم؟</h2>
+          <label><input type="checkbox" name="tools[]" value="الذكاء الاصطناعي"> الذكاء الاصطناعي في تحليل البيانات</label>
+          <label><input type="checkbox" name="tools[]" value="التحليل البياني"> التحليل البياني لفهم الأرقام</label>
+          <label><input type="checkbox" name="tools[]" value="البرامج المحاسبية"> البرامج المحاسبية مثل PC Compta</label>
+          <label><input type="checkbox" name="tools[]" value="Excel"> Excel أو الطرق اليدوية</label>
+        </div>
+        <!-- السؤال 8 -->
+        <div class="question" data-index="7">
+          <h2>8️⃣ هل سبق لك استخدام أحد هذه الأدوات خلال الدراسة أو التربص؟</h2>
+          <label><input type="radio" name="used_tools" value="نعم"> نعم</label>
+          <label><input type="radio" name="used_tools" value="لا"> لا</label>
+          <label><input type="radio" name="used_tools" value="سمعت عنها فقط"> سمعت عنها فقط</label>
+        </div>
+        <!-- السؤال 9 -->
+        <div class="question" data-index="8">
+          <h2>9️⃣ برأيك، هل يمكن للذكاء الاصطناعي أن يحلّ محل المحاسب في المستقبل؟</h2>
+          <label><input type="radio" name="ai_replace" value="نعم"> نعم، تمامًا</label>
+          <label><input type="radio" name="ai_replace" value="ربما"> ربما في بعض المهام فقط</label>
+          <label><input type="radio" name="ai_replace" value="لا"> لا، لأن المحاسب يعتمد على الحكم البشري</label>
+          <label><input type="radio" name="ai_replace" value="لا أدري"> لا أدري</label>
+        </div>
+        <!-- السؤال 10 -->
+        <div class="question" data-index="9">
+          <h2>🔟 ما المهارة التي تراها ضرورية لمحاسب المستقبل؟</h2>
+          <label><input type="radio" name="skills" value="التكنولوجيا"> فهم التكنولوجيا والبرمجيات</label>
+          <label><input type="radio" name="skills" value="التحليل"> مهارات التحليل والتفكير النقدي</label>
+          <label><input type="radio" name="skills" value="التواصل"> التواصل والعمل الجماعي</label>
+          <label><input type="radio" name="skills" value="الدقة"> الالتزام والدقة في العمل</label>
+        </div>
+      </div>
+
+      <!-- البطاقة النهائية -->
+      <div class="final-card" id="finalCard" aria-hidden="true">
+        <div class="final-inner">
+          <div class="final-icon">✅</div>
+          <h2 class="final-title">🌟 شكرًا لمشاركتك القيّمة!</h2>
+          <p class="final-sub">مساهمتك تساعد في تطوير مستقبل المحاسبة.</p>
+          <div class="final-actions">
+            <button type="button" id="restartBtn">🔄 إعادة المشاركة</button>
+            <button type="button" id="downloadBtn">⬇️ تنزيل (JSON)</button>
+          </div>
+        </div>
+        <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+      </div>
+
+    </form>
+  </main>
+
+  <!-- JS خارجي -->
+  <script src="interactions.js"></script>
+  <script>
+  function showFinal() {
+    finalCard.classList.add("show");
+    finalCard.scrollIntoView({ behavior: "smooth", block: "center" });
+    launchConfetti();
+
+    fetch('send_email.php', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(answers)
+    })
+    .then(res => res.json())
+    .then(data => console.log("تم إرسال الإشعار:", data))
+    .catch(err => console.error("خطأ بالإرسال:", err));
+  }
+</script>
+</body>
+
+</body>
+</html>
